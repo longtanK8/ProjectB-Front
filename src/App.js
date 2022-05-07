@@ -1,12 +1,4 @@
-// const express = require('express');
-// const axios = require('axios');
-// const app = express();
-// const port = 3000;
-// const apiKey = "AIzaSyDAbrlZZDpWZmttuetCZNgCeP46p2w4fLc";
 
-// app.get("/", (req, res) => {
-//   res.send("Let's chill!");
-// });
 
 import React from "react";
 import PropTypes from "prop-types";
