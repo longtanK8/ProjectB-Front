@@ -325,7 +325,7 @@ button:hover {
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 .top-header {
-  background-color: black;
+  background-color: #8f8f8c;
   height: 36px;
   line-height: 36px;
   border-bottom: 1px solid gray;
@@ -334,13 +334,13 @@ button:hover {
   line-height: 36px;
   padding-left: 60px;
   font-size: 16px;
-  color: gray;
+  color: #fff;
 }
 .top-header-content2 {
   line-height: 36px;
   margin-left: -50px;
   font-size: 16px;
-  color: gray;
+  color: #fff;
 }
 .top-header-content1 i {
   margin-right: 5px;
@@ -374,7 +374,7 @@ button:hover {
 }
 .nav {
   justify-content: center;
-  background-color: black;
+  background-color: #e8e8b7;
 }
 .nav > a {
   display: inline-block;
@@ -634,15 +634,21 @@ button:hover {
 .footer {
   padding-top: 50px;
   padding-bottom: 30px;
-  background-color: black;
+  background-color: #8f8f8c;
 }
+@media(min-width: 1400px){
+  .footer .container{
+    max-width: 1450px;
+  }
+}
+
 .footer-item1 img {
   cursor: pointer;
   width: 150px;
 }
 .footer-item1 p {
   margin-top: 20px;
-  color: gray;
+  color: #fff;
   font-size: 16px;
 }
 .footer-fontawesome a > i {
@@ -659,7 +665,7 @@ button:hover {
 }
 .footer-item2 p {
   font-size: 16px;
-  color: gray;
+  color: #fff;
 }
 .footer-item2 p > i {
   margin-right: 5px;
@@ -679,7 +685,7 @@ button:hover {
 }
 .footer-item3 p {
   font-size: 16px;
-  color: gray;
+  color: #fff;
 }
 #emailform button {
   background-color: black;
@@ -697,9 +703,10 @@ button:hover {
 .copyright {
   line-height: 40px;
   margin-bottom: 0;
-  background-color: black;
+  background-color: #E8E8B7;
   text-align: center;
-  color: gray;
+  color: #333;
+  font-weight: bold;
 }
 .go-top {
   display: none;

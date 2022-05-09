@@ -243,3 +243,74 @@
     width: 500px ;
     left: 64.65%;
 }
+
+.product-icons_ac::before {
+    display: inline-block;
+    line-height: 1em;
+    font-family: 'spark-icon-fill';
+    font-size: 1em;
+    vertical-align: baseline;
+    font-weight: normal;
+    content: "\F218";
+}
+
+.product-icons_wifi::before {
+    display: inline-block;
+    line-height: 1em;
+    font-family: 'spark-icon-fill';
+    font-size: 1em;
+    vertical-align: baseline;
+    font-weight: normal;
+    content: "\F16D";
+}
+
+.product-icons_bathtub::before {
+    display: inline-block;
+    line-height: 1em;
+    font-family: 'spark-icon-fill';
+    font-size: 1em;
+    vertical-align: baseline;
+    font-weight: normal;
+    content: "\F219";
+}
+
+
+.short-service li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.gradient-custom-4 {
+    background: linear-gradient(to right, #1160a6, rgb(27 127 204 / 80%));
+}
+.error {
+    color: red;
+}
+.form-label {
+    font-weight: bold;
+}
+
+/* loader */
+.loader {
+    position: fixed;
+    left: 37%;
+    margin:5% auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 500px;
+    height: 500px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

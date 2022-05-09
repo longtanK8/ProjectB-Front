@@ -1,37 +1,30 @@
 import React from "react";
-import './styles.css';
-
+import "./styles.css";
 
 class About extends React.Component {
+  state = {};
 
-    state = {
-
-    }
-
-    render() {
-        return (
-            <main>
-                <p id="test">fksghdjs</p>
-                <button onClick={() => change("test")}>click</button>
-            </main>
-        )
-    }
+  render() {
+    return (
+      <main>
+        <p id="test">fksghdjs</p>
+        <button onClick={() => change("test")}>click</button>
+      </main>
+    );
+  }
 }
 
 newChange();
-function change(id){
-    let element = document.getElementById(id);
-    setTimeout(() => {
-        element.innerHTML = "awetaserf"
-    }, 2000);
-    
-    console.log(element)
+function change(id) {
+  let element = document.getElementById(id);
+  // setTimeout(() => {
+  //     element.innerHTML = "awetaserf"
+  // }, 2000);
+
+  console.log(element);
 }
 
-
-
-async function newChange(){
-    await change();
-    console.log('done')
+async function newChange() {
+  await change();
 }
 export default About;
