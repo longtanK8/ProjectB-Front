@@ -1,0 +1,703 @@
+@charset "ISO-8859-1";
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+  position: absolute;
+  height: 100%;
+  width: 240px;
+  background: #0A2558;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active {
+  width: 100%;
+}
+
+.sidebar .logo-details {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo-details i {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+
+.sidebar .logo-details .logo_name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sidebar .nav-links {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 50px;
+  width: 100% !important;
+}
+
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a.active {
+  background: #081D45;
+}
+
+.sidebar .nav-links li a:hover {
+  background: #081D45;
+}
+
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar .nav-links li a .links_name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .nav-links .log_out {
+  position: absolute;
+  bottom: 0;
+  width: 86%;
+}
+
+.home-section {
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.home-section nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section .narbar {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
+.narbar {
+  width: 70vw;
+}
+
+
+.narbar .sidebar-button i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+
+.narbar .search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.narbar .search-box .bx-search {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+
+/* this is main login page for manager*/
+
+.header-container {
+  width: 98%;
+  position: absolute;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: -99999999999999;
+  box-shadow: 0px 10px 13px -7px #ccc, 0px 5px 0px 5px rgba(255, 0, 250, 0);
+}
+
+.profile-details {
+  display: flex;
+  justify-content: right;
+  align-self: center;
+  text-align: center;
+  padding: 0;
+}
+
+.profile-details p {
+  margin: 0;
+}
+
+.sidebar-button {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.search-box {
+  margin-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.search-box input {
+  padding: 0;
+}
+
+.container-home {
+  width: 1560px;
+  height: 640px;
+  margin-left: 15%;
+  z-index: -1;
+  position: fixed;
+  top: 90px;
+}
+
+.row-item {
+  margin-top: 50px;
+}
+
+.progressBar {
+  padding: 30px;
+}
+
+.take-action-form {
+  color: white;
+  background-color: #0A2558 !important;
+  width: 440px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.take-action-form h2 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0px !important;
+}
+
+.take-action-form form {
+  padding: 10px;
+}
+
+.take-action-form textarea {
+  width: 80%;
+  margin-left: 15%;
+  height: 180px;
+}
+
+.form-lable-left label {
+  margin-left: 10px;
+}
+
+.take-action-form label {
+  margin-left: 10px;
+}
+
+#status {
+  width: 120px;
+}
+
+.take-action-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+
+.take-action-button button {
+  width: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+/* #dark-overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #333;
+	opacity: 0.6;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#overlay {
+	position: fixed;
+	display: none;
+	top: 200px;
+	left: 650px;
+	z-index: 3;
+} */
+.manager-title-content {
+  color: #1e59c8;
+  text-align: center;
+}
+
+
+
+.manager-title-content {
+  margin-bottom: 30px;
+}
+
+.booking-table {
+  border-color: #0A2558;
+}
+
+.booking-detail-body tr th {
+  border-color: #0A2558;
+  width: 200px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.booking-detail-body tr td {
+  border-color: #0A2558;
+}
+
+.booking-detail-head tr td {
+  border-color: #0A2558;
+}
+
+.invoice-btn {
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
+.detail-title {
+  font-weight: bolder;
+  color: #1e59c8 !important;
+}
+
+#dropdown-split-basic {
+  margin-left: 5vw;
+  width: 2vw !important;
+  background: none !important;
+  border: none !important;
+}
+
+.dropdown-menu {
+  z-index: 9;
+  background-color: #0A2558 !important;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: white;
+}
+
+.contact-group {
+  margin-top: 30px;
+}
+
+.contact-label {
+  font-size: 20px;
+}
+
+.contact-control {
+  height: 50px;
+}
+
+.contact-button {
+  height: 45px !important;
+  margin-left: 43% !important;
+  margin-top: 20px !important;
+}
+
+.about-group {
+  margin-top: 30px;
+}
+
+.about-label {
+  font-size: 20px;
+}
+
+.about-control {
+  height: 50px;
+}
+
+.about-button {
+  height: 45px !important;
+  margin-left: 43% !important;
+  margin-top: 20px !important;
+}
+
+.about-container {
+  width: 80%;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.btn-delete {
+  width: 100px !important;
+  margin-left: 10px;
+  background-color: crimson !important;
+}
+
+.btn-delete:hover {
+  background-color: rgb(227, 80, 129) !important;
+
+}
+
+.btn-update {
+  width: 100px !important;
+  margin-left: 10px;
+}
+
+.btn-add {
+  margin-left: 10px;
+  width: 50px !important;
+  background-color: #1e59c8 !important;
+}
+
+.btn-add:hover {
+  background-color: lightblue !important;
+}
+
+.service-body tr th {
+  border-color: #0A2558;
+  width: 200px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.service-body tr td {
+  border-color: #0A2558;
+}
+
+.small-td {
+  width: 100px !important;
+  text-align: center;
+}
+
+.service-header tr th {
+  text-align: center;
+  border-color: #0A2558;
+}
+
+.service-table {
+  border-color: #0A2558;
+}
+
+.room-body tr th {
+  border-color: #0A2558;
+  width: 200px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.room-body tr td {
+  width: 100%;
+  border-color: #0A2558;
+}
+
+.room-header tr th {
+  text-align: center;
+  border-color: #0A2558;
+}
+
+.room-table {
+  border-color: #0A2558;
+}
+
+.medium-td {
+  text-align: center;
+  width: 150px !important;
+}
+
+.booking-detail-head tr th {
+  text-align: center;
+  border-color: #0A2558;
+}
+
+
+.service-container,
+.room-container,
+.user-container,
+.table-container,
+.contact-container {
+  top: 10%;
+  left: 15%;
+  min-width: 83vw;
+  height: 40vw;
+  margin-left: 280px;
+  overflow-y: scroll;
+  padding-right: 30px;
+}
+
+.button_container {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  background-color: white !important;
+}
+
+.function_container {
+  position: fixed;
+  top: 85px;
+  z-index: -99;
+
+}
+
+.more-detail {
+  text-align: center;
+}
+
+.large-td {
+  text-align: center;
+}
+
+.progress {
+  height: 35px;
+  font-size: 18px;
+}
+
+.invoice-btn {
+  position: fixed;
+  top: 640px;
+}
+
+/* action form css */
+.action-form-black {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.94;
+}
+
+.action-form {
+  margin: 30px;
+}
+
+.action-form .booking-table {
+  background-color: #fff;
+}
+
+.action-form-container {
+  background-color: white;
+  opacity: 1;
+  width: 500px;
+  margin-top: 10%;
+  margin-left: 40%;
+  border: 3px solid white;
+  padding: 15px;
+}
+
+.taking-action-button {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.user-form-black {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.94;
+}
+
+.user-form {
+  margin: 30px;
+}
+
+
+.user-form-container {
+  background-color: white;
+  opacity: 1;
+  width: 500px;
+  margin-top: 6%;
+  margin-left: 40%;
+  border: 3px solid white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.action-button {
+  width: 100px;
+  margin-left: 7.5vw;
+  margin-right: 2vw;
+}
+
+.close-button {
+  width: 100px;
+}
+
+
+.service-form-black {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.94;
+}
+
+.service-form {
+  margin: 30px;
+}
+
+
+.service-form-container {
+  background-color: white;
+  opacity: 1;
+  width: 500px;
+  /* margin-top: 6%; */
+  margin-left: 40%;
+  border: 3px solid white;
+  padding: 15px;
+}
+
+.room-form-black {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.94;
+}
+
+.room-form {
+  margin: 30px;
+}
+
+
+.room-form-container {
+  background-color: white;
+  width: 500px;
+  margin-top: 2%;
+  margin-left: 40%;
+  border: 3px solid white;
+  padding: 15px;
+  z-index: 999999;
+}
+
+.error {
+  color: red;
+}
+
+.home {
+  max-width: 85vw;
+  max-height: 80vh;
+}
+
+/* Pagination */
+.tab-pane ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.tab-pane ul li {
+  border: 1px solid #333 !important;
+  margin: 3px !important;
+  padding: 10px !important;
+}
+
+.tab-pane ul .next,
+.tab-pane ul .previous {
+  display: none;
+}
+
+.tab-pane ul .selected {
+  background-color: #1160a6;
+}
+
+.room_management {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  min-width: 83vw;
+  height: 40vw;
+  overflow-y: scroll;
+  z-index: -99;
+}
+
+.room_id {
+  margin: 20px;
+  background-color: green;
+}
+
+.ava_room {
+  background-color: #00b33c;
+
+}
+
+.used_room {
+  background-color: #e31414;
+}

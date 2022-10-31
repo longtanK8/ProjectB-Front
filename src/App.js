@@ -1,47 +1,19 @@
-
-
 import React from "react";
-import PropTypes from "prop-types";
-import Header from "./components/Header";
-import Homepage from "./components/Homepage";
-import Footer from "./components/Footer";
-import Chatbox from "./components/Chatbox"
-import { BrowserRouter, Route } from 'react-router-dom';
+import ManagerLoginCheck from "./components/admin-components/ManagerLoginCheck";
+import ManagerRoom from "./components/admin-components/ManagerRoom";
+import ManagerSideBar from "./components/admin-components/ManagerSidebar";
 
 function App() {
+  const token = sessionStorage.getItem("token");
+
   return (
     <div className="App">
-      <div className="date"></div>
       <div>
         <div className="main-interface">
-          < Header />
-          < Chatbox />
+          {token === null ? <ManagerLoginCheck /> : <ManagerSideBar />}
         </div>
       </div>
     </div>
-
-
   );
 }
-
-
-
-
-// const ytb = ({ embedId }) => (
-
-// );
-
-// ytb.propTypes = {
-//   embedId: PropTypes.string.isRequired
-// };
-
-
-// setInterval(() => {
-//   let date = new Date();
-
-//   document.getElementsByClassName('date')[0].innerHTML = date + "\n";
-
-// }, 1000);
-
-
 export default App;

@@ -32,7 +32,7 @@ img{
   max-width: 100%;
 }
 
-button {
+/* button {
   border: 1px solid black !important;
   font-weight: bold !important;
   width: 150px !important;
@@ -43,7 +43,7 @@ button {
 button:hover {
   color: black !important;
   background-color: rgb(164, 146, 67) !important;
-}
+} */
 .main-content {
   background-color: #9099a2;
   border: 2px solid black;
